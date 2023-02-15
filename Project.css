@@ -1,0 +1,27 @@
+article {
+    background-color: white;
+    width: 300px;
+    border: 5px solid white;
+    padding: 2pt 2pt 0pt 2pt;
+    margin: 20px 350px 0px 350px;
+}
+#sneakers {
+    color: darkgray; font-size: 10px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+
+nav
+{word-spacing: 5pt;}
+a.navlinks:link {text-decoration: none; color: darkgrey;font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 10pt;}
+a.navlinks:visited {text-decoration: none; color: darkgray;}
+a.navlinks:hover {text-decoration: none; color: black; font-size: 200%;}
+
+#Head {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1;
+}
+#Fall {
+    font-size: 150%; font-weight: bold;
+}
