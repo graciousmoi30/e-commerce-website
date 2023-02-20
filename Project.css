@@ -1,27 +1,230 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+}
+
+header {
+    display: flex;
+    
+}
+
+.navbar {
+    margin: 1rem;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+
 article {
     background-color: white;
     width: 300px;
     border: 5px solid white;
     padding: 2pt 2pt 0pt 2pt;
-    margin: 20px 350px 0px 350px;
+    margin: 5rem 350px 0px 28rem;
 }
 #sneakers {
-    color: darkgray; font-size: 10px;
-     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
+    font-size: 12px;
+    color:hsl(219, 9%, 45%);
 }
 
 
 nav
-{word-spacing: 5pt;}
-a.navlinks:link {text-decoration: none; color: darkgrey;font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 10pt;}
-a.navlinks:visited {text-decoration: none; color: darkgray;}
-a.navlinks:hover {text-decoration: none; color: black; font-size: 200%;}
+a.navlinks:link {text-decoration: none; font-size: 8pt; color:hsl(219, 9%, 45%);}
+a.navlinks:visited {text-decoration: none; color:hsl(219, 9%, 45%)}
+a.navlinks:hover {text-decoration: none; color: black;}
 
-#Head {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.home 
+a:link {text-decoration: none; color: black; font-weight: 700; font-size: 150%; text-transform: lowercase; }
+a:visited {text-decoration: none; color:black}
+a:hover {text-decoration: none; color: black;}
+
+
+.Head {
     line-height: 1;
+    word-spacing: 2pt;
+    color: hsl(26, 100%, 55%);
+    font-size: 10px;
+    font-weight: 500;
+
 }
 #Fall {
-    font-size: 150%; font-weight: bold;
+    color: black;
+    font-weight: 700;
+    font-size: 25px;
+}
+.mylinks {
+    display: flex;
+    list-style: none;
+    width: 15rem;
+    justify-content: space-between;
+    margin-left: 3rem;
+}
+
+#discount {
+    color: hsl(26, 100%, 55%); 
+    font-size: 8px; 
+    background-color:hsl(25, 100%, 94%);
+    border-radius: 5px; 
+    border:solid hsl(25, 100%, 94%) 0.5px 1px; 
+    padding: 4px;
+    font-weight: 700;
+    font-size: 12px;
+    }
+
+.price {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+#delete{
+    text-decoration: line-through;
+    color:hsl(220, 14%, 75%);
+    font-size: 11px;
+}
+.buttons{
+    display: flex
+}
+.button1 {
+    width: 105px;
+    height: 35px;
+    background-color: hsl(223, 64%, 98%);
+    border-radius: 8px;
+    border:1px solid hsl(223, 64%, 98%);
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.button2 {
+    width: 160px;
+    height: 37px;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 8px;
+    border:1px solid hsl(223, 64%, 98%);
+    font-weight: 700;
+    font-size: 10px;
+    color: white;
+    justify-content:center;
+    align-items:center;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    margin-left: 0.5rem;
+}
+
+.cart {
+margin-left: 20rem;
+}
+
+#ct {
+    margin-right: 2rem;
+}
+
+#thumbnail
+img{
+    border-radius: 5px;
+    margin-right: 1.2rem;
+}
+
+#thumbnail{
+    margin-left: 3rem;
+    margin-bottom: 5rem;
+}
+
+#tb1 { opacity:0.5;}
+
+.image {
+    margin:3rem
+}
+.image
+img {
+    float:left; 
+    border-radius:5px;
+}
+
+/*.combine {
+    margin-top: 0rem;
+}*/
+
+@media screen and (max-width:700px) {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.mylinks {
+    list-style-type: none;
+    display: none;
+}
+
+.home
+a:link {margin-left: 2rem;}
+#hamburger {
+    display:block
+}
+#thumbnail {
+    display: none;
+}
+
+article{
+    margin-left: 1rem;
+}
+
+.image {
+    margin-left:0;
+    border-radius: 0;
+    margin-top: 1rem;
+}
+.image
+img{
+    border-radius: 0;
+}
+
+
+.button1 {
+    width: 180px;
+    height: 37px;
+    background-color: hsl(223, 64%, 98%);
+    border-radius: 8px;
+    border:1px solid hsl(223, 64%, 98%);
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 5px;
+    cursor: pointer;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    height: 6rem;
+    padding: 0rem;
+    margin: 1rem;
+    justify-content: space-around
+}
+.button2 {
+    margin-left: 0rem;
+}
+body {
+margin: 0;
+}
+
+.cart {
+    margin-left: 1rem;
+}
+}
+
+@media screen and (min-width:700px) {
+    #hamburger {
+        display:none
+    }
+
 }
